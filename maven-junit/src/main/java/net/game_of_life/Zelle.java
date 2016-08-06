@@ -33,10 +33,9 @@ public class Zelle {
     nachbarn.add(neighbour);
   }
 
-  public int getAnzahlVonNachbarn() {
+  public Integer getAnzahlVonNachbarn() {
     return nachbarn.size();
   }
-
 
   public void entwickeln() {
     if(getAnzahlVonNachbarn() < 2) {

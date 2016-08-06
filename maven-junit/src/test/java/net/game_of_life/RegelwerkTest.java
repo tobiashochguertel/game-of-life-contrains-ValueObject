@@ -7,6 +7,9 @@ import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.lessThan;
 import static org.junit.Assert.assertEquals;
 
+import static net.game_of_life.Lebenszustand.*;
+import static org.junit.Assert.assertTrue;
+
 public class RegelwerkTest {
 
   /* Any live cell with fewer than two live neighbours dies, as if caused by underpopulation.
@@ -15,14 +18,13 @@ public class RegelwerkTest {
 
   @Test
   public void lebende_Zelle_stirbt_wenn_sie_weniger_als_zwei_lebende_Nachbarn_hat() {
-    Zelle lebendeZelle = new Zelle(Lebenszustand.LEBENDIG);
-    assertEquals(lebendeZelle.getLebenszustand(), Lebenszustand.LEBENDIG);
-    lebendeZelle.addNachbar(new Zelle(Lebenszustand.LEBENDIG));
+    Zelle lebendeZelle = new Zelle(LEBENDIG);
+    assertEquals(lebendeZelle.getLebenszustand(), LEBENDIG);
+    lebendeZelle.addNachbar(new Zelle(LEBENDIG));
     lebendeZelle.entwickeln();
-
-    assertEquals(Lebenszustand.TOT, lebendeZelle.getLebenszustand());
+    assertThat(lebendeZelle.getAnzahlVonNachbarn(), lessThan(2));
+    assertEquals(TOT, lebendeZelle.getLebenszustand());
   }
-
 
   /* Any live cell with more than three live neighbours dies, as if by overcrowding.
    * live cell > 3 live neighbours = cell dead
