@@ -17,14 +17,6 @@ public class Zelle {
     this.nachbarn.addAll(nachbarn);
   }
 
-  public List<Zelle> getNachbarn() {
-    return nachbarn;
-  }
-
-  public void setNachbarn(List<Zelle> nachbarn) {
-    this.nachbarn = nachbarn;
-  }
-
   public Lebenszustand getLebenszustand() {
     return lebenszustand;
   }
@@ -33,13 +25,19 @@ public class Zelle {
     nachbarn.add(neighbour);
   }
 
-  public Integer getAnzahlVonNachbarn() {
-    return nachbarn.size();
+  public AnzahlVonNachbarn getAnzahlVonNachbarn() {
+    return new AnzahlVonNachbarn(nachbarn.size());
   }
 
   public void entwickeln() {
-    if(getAnzahlVonNachbarn() < 2) {
+    if (getAnzahlVonNachbarn().kleinerAls(new AnzahlVonNachbarn(2))) {
       lebenszustand = Lebenszustand.TOT;
+    }
+    if (getAnzahlVonNachbarn().großerAls(new AnzahlVonNachbarn(3))) {
+      lebenszustand = Lebenszustand.TOT;
+    }
+   if (getAnzahlVonNachbarn().equals(new AnzahlVonNachbarn(3))) {
+      lebenszustand = Lebenszustand.LEBENDIG;
     }
   }
 }

@@ -7,12 +7,12 @@ package net.game_of_life;
  *  - Value-Objects als Parameter für Methoden.
  */
 
-/**
- * Game of life Design:
- *  - es gibt ein Brett.
- *  - es gibt Zellen die auf dem Brett liegen.
- */
+  /**
+   * Game of life Design:
+   *  - es gibt ein Brett.
+   *  - es gibt Zellen die auf dem Brett liegen.
+   */
 
-public class Example {
+  public class Flaeche {
 
 }
