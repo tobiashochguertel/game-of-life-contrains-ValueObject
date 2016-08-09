@@ -13,7 +13,7 @@ Die Einschränkung "No Primitives accross method boundaries (input or output)" b
 - Als primitive Datentypen gelten int, string, array, list, usw…
 - Statt dessen sind Datentypen zu verwenden die wir selbst definiert haben im Sinne von "ValueObjects".
 - Wir konzentrieren uns auf das was die Datentypen im Konzept der Anwendung repräsentieren und erstellen dafür eigene Datentypen.
-- 
+
 Wer hat, bringt einen Laptop mit installierter Entwicklungsumgebung und entsprechendem Unit-Testing Framework mit.
 
 Das Kata wird von Tobias Hochgürtel durchgeführt.
