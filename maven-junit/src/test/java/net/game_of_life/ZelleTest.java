@@ -8,7 +8,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.assertEquals;
 
-public class RegelwerkTest {
+public class ZelleTest {
 
   /* Any live cell with fewer than two live neighbours dies, as if caused by underpopulation.
    * live cell < 2 live neighbours = cell dead
