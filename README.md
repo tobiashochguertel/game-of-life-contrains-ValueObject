@@ -1,6 +1,7 @@
 ## Dojo: 8.8.2016, Softwerkkammer Magdeburg, Kata: Conways game of life
 
 Veranstaltung [Softwerkkammer Magdeburg, Dojo am 08.08.2016](https://www.softwerkskammer.org/activities/magdeburg_treffen_36)
+Slides: [Speakerdeck.com/tobiashochguertel](https://speakerdeck.com/tobiashochguertel/softwerkskammer-magdeburg-coding-dojo-kata-conways-game-of-life-1)
 
 Bei einem Coding Dojo wird gemeinsam (Pair Programming) eine kleine, überschaubare Übungsaufgabe (Coding Kata) testgetrieben (TDD) entwickelt. Dabei steht das gemeinsame voneinander Lernen und Üben von bereits Gelerntem im Fokus. Die komplette Lösung der Aufgabe ist nicht zwingend. Vielmehr ist der Weg das Ziel. Um den Schwierigkeitsgrad zu steigern können zusätzlich zur eigentlichen Übungsaufgabe Constraints festgelegt werden.
 
